@@ -5,21 +5,13 @@ import { cn } from '@/lib/utils'
 
 interface SectionWrapperProps {
   id: string
-  label: string       // e.g. "01"
-  title: string       // e.g. "About Me"
+  label: string     
+  title: string      
   children: React.ReactNode
   className?: string
-  alternate?: boolean // alternates background for visual rhythm
+  alternate?: boolean 
 }
 
-/**
- * Reusable section shell used by every section component.
- * Provides:
- *  - Consistent ID anchor for smooth-scroll navigation
- *  - Decorative oversized section number behind content
- *  - Staggered fade-up entrance on scroll via IntersectionObserver
- *  - Responsive max-width container
- */
 export default function SectionWrapper({
   id,
   label,

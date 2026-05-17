@@ -2,18 +2,14 @@
 
 import { Moon, Sun } from 'lucide-react'
 import { motion, AnimatePresence } from 'framer-motion'
-import { useTheme } from './ThemeProvider'
+import { useTheme } from 'next-themes'
 
-/**
- * Animated moon/sun toggle button for the navbar.
- * Icons rotate in/out with a smooth spring transition.
- */
 export default function ThemeToggle() {
-  const { theme, toggleTheme } = useTheme()
+  const { theme, setTheme } = useTheme()
 
   return (
     <button
-      onClick={toggleTheme}
+      onClick={() => setTheme(theme === 'dark' ? 'light' : 'dark')}
       aria-label={`Switch to ${theme === 'dark' ? 'light' : 'dark'} mode`}
       className="relative flex h-9 w-9 items-center justify-center rounded-full
                  border border-[var(--color-border)] bg-[var(--color-card)]
