@@ -14,7 +14,7 @@ const HIGHLIGHTS = [
 export default function About() {
   const ref = useRef(null);
   const inView = useInView(ref, { once: true, margin: "-80px" });
-  
+
   // State to manage modal visibility
   const [isModalOpen, setIsModalOpen] = useState(false);
 
@@ -139,11 +139,11 @@ export default function About() {
                 <h3 className="text-white font-semibold flex items-center gap-2">
                   <span className="text-[var(--secondary)]">CV</span> / Diasanta
                 </h3>
-                
+
                 <div className="flex items-center gap-4">
                   {/* Optional: Add a direct download link here if they still want to save it */}
-                  <a 
-                    href="/Diasanta - Resume.pdf" 
+                  <a
+                    href="/Diasanta - Resume.pdf"
                     download
                     className="text-xs font-semibold text-[var(--accent)] hover:underline"
                   >
@@ -159,11 +159,15 @@ export default function About() {
               </div>
 
               {/* PDF Viewer */}
-              <div className="flex-1 w-full bg-white/5">
+              <div className="relative w-full flex-1" style={{ height: "80vh" }}>
+                <div className="absolute inset-0 flex items-center justify-center text-[var(--secondary)] text-sm">
+                  Loading CV...
+                </div>
                 <iframe
-                  src="/Diasanta - Resume.pdf"
-                  className="w-full h-full border-none"
-                  title="Diasanta - Resume"
+                  src={`https://docs.google.com/viewer?url=${encodeURIComponent("https://portfolio-dlarx.vercel.app/Diasanta - Resume.pdf")}&embedded=true`}
+                  className="absolute inset-0 w-full h-full"
+                  style={{ border: "none" }}
+                  title="Gerald Diasanta CV"
                 />
               </div>
             </motion.div>
