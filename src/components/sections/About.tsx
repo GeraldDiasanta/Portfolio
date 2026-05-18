@@ -164,7 +164,7 @@ export default function About() {
                   Loading CV...
                 </div>
                 <iframe
-                  src={`https://docs.google.com/viewer?url=${encodeURIComponent("https://portfolio-dlarx.vercel.app/Gerald_Diasanta_Resume.pdf")}&embedded=true`}
+                  src={`https://docs.google.com/viewer?url=${encodeURIComponent("https://portfolio-gdiasanta.vercel.app/Gerald_Diasanta_Resume.pdf")}&embedded=true`}
                   className="absolute inset-0 w-full h-full"
                   style={{ border: "none" }}
                   title="Gerald Diasanta CV"
