@@ -146,7 +146,7 @@ export default function Hero() {
             <span className="gradient-text">Gerald Diasanta</span>
           </h1>
           <p className="text-[var(--secondary)] text-lg max-w-sm mb-8 font-body leading-relaxed">
-            Full-Stack Developer — building intelligent, beautiful digital experiences.
+            Data Analyst & Full-Stack Developer — building intelligent, beautiful digital experiences.
           </p>
           <div className="flex items-center gap-4">
             <motion.button
@@ -228,7 +228,7 @@ export default function Hero() {
             <span className="gradient-text">Gerald Diasanta</span>
           </h1>
           <p className="text-[var(--secondary)] text-sm max-w-xs mx-auto mb-6 font-body leading-relaxed">
-            Full-Stack Developer — building intelligent, beautiful digital experiences.
+            Data Analyst & Full-Stack Developer — building intelligent, beautiful digital experiences.
           </p>
 
           <div className="flex items-center justify-center gap-3 flex-wrap">

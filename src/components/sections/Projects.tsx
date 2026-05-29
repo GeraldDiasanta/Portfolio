@@ -6,9 +6,30 @@ import { Images, X, ChevronLeft, ChevronRight } from "lucide-react";
 
 const PROJECTS = [
   {
+    title: "Olist E-Commerce End-to-End Analytics & Forecasting Platform",
+    description:
+      "A production-grade data pipeline and time-series predictive engine processing 100K+ transactional records. Built an automated Python ETL pipeline to clean and migrate data into an optimized relational Star Schema hosted on a cloud Supabase PostgreSQL cluster. Deployed a Meta Prophet machine learning model to forecast a 12-week sales trajectory with 95% confidence intervals before delivering business insights through a live Power BI executive suite.",
+    images: [
+      "/images/projects/Olist/Executive Summary.png",
+      "/images/projects/Olist/Performance Diagnostics.png",
+    ],
+    tags: ["Python", "Supabase", "PostgreSQL", "Power BI", "Meta Prophet", "Pandas"],
+    featured: true,
+  },
+  {
+    title: "Sales Analytics Pipeline & Executive Dashboard",
+    description:
+      "Engineered a full-stack data pipeline using Python and Pandas to ingest, clean, and process 10,000+ transaction records before relational staging. Architected a local MySQL database with strict schema constraints and scripted SQL query integrity checks to ensure production-ready data synchronization. Designed an executive-level Power BI dashboard featuring custom DAX aggregations, successfully identifying a major operational bottleneck in the Central corporate region where $500K in gross volume yielded disproportionately low net profitability ($40K).",
+    images: [
+      "/images/projects/Sales Analytics/dashboard_preview.png",
+    ],
+    tags: ["Python", "MySQL", "Power BI", "Pandas"],
+    featured: true,
+  },
+  {
     title: "GOBUDDY: A Travel Website Platform that Promotes Lipa's Tourism by Leveraging Analytics",
     description:
-      "GoBuddy is an interactive tourism platform that combines map-based trip planning, community forums, and business directories for Lipa City. It delivers a seamless digital experience for travelers while providing data-driven analytics for local businesses and the city's tourism office",
+      "GoBuddy is an interactive tourism platform that combines map-based trip planning, community forums, and business directories for Lipa City. It delivers a seamless digital experience for travelers while providing data-driven analytics for local businesses and the city's tourism office.",
     images: [
       "/images/projects/GoBuddy/project (1).png",
       "/images/projects/GoBuddy/project (2).png",
